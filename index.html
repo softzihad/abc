@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({
+        	left: '250px',
+        	height:'120px',
+        	width: '150px',
+        	fontSize: '36px'
+        }, "slow");
+    });
+});
+</script> 
 </head>
 <body>
-	<h1>Bangladesh</h1>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus fuga molestiae cum libero in impedit quia quas omnis reiciendis officia eligendi harum obcaecati, alias fugit iusto nobis laboriosam voluptatum dolores quos quaerat et quis voluptatibus dolorum nam eum. Molestias laborum cupiditate alias perferendis eveniet, aspernatur magnam repudiandae fugit adipisci autem quidem similique voluptatem asperiores commodi necessitatibus quas ab impedit ratione vitae fuga molestiae eligendi officia laboriosam. Ea, nihil labore, et provident iste praesentium doloremque minima consectetur sequi laboriosam, cumque incidunt natus. Voluptatem dignissimos magni facilis! Tempore veniam cupiditate, pariatur, quibusdam, alias doloremque aspernatur esse, aliquid iusto consequuntur animi voluptates quaerat.</p>
-	<a href="#">Facebook</a>
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;">Hellow !</div>
+
 </body>
 </html>
